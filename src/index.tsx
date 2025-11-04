@@ -58,6 +58,10 @@ app.get('/', (c) => {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
         }
         
+        .day-card-header {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        }
+        
         .info-badge {
             display: inline-flex;
             align-items: center;
@@ -244,7 +248,7 @@ app.get('/', (c) => {
             
             <!-- Day 1 -->
             <div id="day1" class="mb-6">
-                <div class="day-card bg-white rounded-2xl shadow-lg p-6" onclick="toggleDay('day1-content')">
+                <div class="day-card day-card-header rounded-2xl shadow-lg p-6" onclick="toggleDay('day1-content')">
                     <div class="flex items-center justify-between">
                         <div>
                             <h3 class="text-2xl font-bold text-gray-800 mb-2">
@@ -315,7 +319,7 @@ app.get('/', (c) => {
 
             <!-- Day 2 -->
             <div id="day2" class="mb-6">
-                <div class="day-card bg-white rounded-2xl shadow-lg p-6" onclick="toggleDay('day2-content')">
+                <div class="day-card day-card-header rounded-2xl shadow-lg p-6" onclick="toggleDay('day2-content')">
                     <div class="flex items-center justify-between">
                         <div>
                             <h3 class="text-2xl font-bold text-gray-800 mb-2">
@@ -452,7 +456,7 @@ app.get('/', (c) => {
 
             <!-- Day 3 -->
             <div id="day3" class="mb-6">
-                <div class="day-card bg-white rounded-2xl shadow-lg p-6" onclick="toggleDay('day3-content')">
+                <div class="day-card day-card-header rounded-2xl shadow-lg p-6" onclick="toggleDay('day3-content')">
                     <div class="flex items-center justify-between">
                         <div>
                             <h3 class="text-2xl font-bold text-gray-800 mb-2">
@@ -561,7 +565,7 @@ app.get('/', (c) => {
 
             <!-- Day 4 -->
             <div id="day4" class="mb-6">
-                <div class="day-card bg-white rounded-2xl shadow-lg p-6" onclick="toggleDay('day4-content')">
+                <div class="day-card day-card-header rounded-2xl shadow-lg p-6" onclick="toggleDay('day4-content')">
                     <div class="flex items-center justify-between">
                         <div>
                             <h3 class="text-2xl font-bold text-gray-800 mb-2">
@@ -649,7 +653,7 @@ app.get('/', (c) => {
 
             <!-- Day 5 -->
             <div id="day5" class="mb-6">
-                <div class="day-card bg-white rounded-2xl shadow-lg p-6" onclick="toggleDay('day5-content')">
+                <div class="day-card day-card-header rounded-2xl shadow-lg p-6" onclick="toggleDay('day5-content')">
                     <div class="flex items-center justify-between">
                         <div>
                             <h3 class="text-2xl font-bold text-gray-800 mb-2">
@@ -733,7 +737,7 @@ app.get('/', (c) => {
 
             <!-- Day 6 -->
             <div id="day6" class="mb-6">
-                <div class="day-card bg-white rounded-2xl shadow-lg p-6" onclick="toggleDay('day6-content')">
+                <div class="day-card day-card-header rounded-2xl shadow-lg p-6" onclick="toggleDay('day6-content')">
                     <div class="flex items-center justify-between">
                         <div>
                             <h3 class="text-2xl font-bold text-gray-800 mb-2">
@@ -811,7 +815,7 @@ app.get('/', (c) => {
 
             <!-- Day 7 -->
             <div id="day7" class="mb-6">
-                <div class="day-card bg-white rounded-2xl shadow-lg p-6" onclick="toggleDay('day7-content')">
+                <div class="day-card day-card-header rounded-2xl shadow-lg p-6" onclick="toggleDay('day7-content')">
                     <div class="flex items-center justify-between">
                         <div>
                             <h3 class="text-2xl font-bold text-gray-800 mb-2">
