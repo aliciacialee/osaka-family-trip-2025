@@ -67,15 +67,39 @@ curl http://localhost:3000
 npm run deploy
 ```
 
+### 部署到 Netlify
+1. **生成靜態 HTML 文件**:
+```bash
+npm run build:netlify
+```
+
+2. **Netlify 設置**:
+   - Build command: `npm run build:netlify`
+   - Publish directory: `public`
+   - 或直接連接 GitHub 倉庫自動部署
+
+3. **手動部署**:
+```bash
+# 安裝 Netlify CLI (如果還沒安裝)
+npm install -g netlify-cli
+
+# 部署到 Netlify
+netlify deploy --dir=public --prod
+```
+
 ## 專案結構
 ```
 osaka-trip/
+├── index.tsx              # 主要應用程式（Hono + 完整HTML）
 ├── src/
-│   └── index.tsx          # 主要應用程式（包含完整HTML）
-├── public/                # 靜態資源
-├── dist/                  # 建置輸出
+│   └── renderer.tsx       # 渲染器
+├── public/
+│   └── index.html         # 靜態 HTML（用於 Netlify）
+├── dist/                  # Cloudflare Workers 建置輸出
 ├── ecosystem.config.cjs   # PM2 配置
 ├── wrangler.jsonc         # Cloudflare 配置
+├── netlify.toml           # Netlify 配置
+├── build-netlify.sh       # Netlify 建置腳本
 ├── package.json           # 依賴管理
 └── README.md              # 本文件
 ```
